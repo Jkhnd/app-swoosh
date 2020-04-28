@@ -130,6 +130,9 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="Rao-tb-HzE" eventType="touchUpInside" id="sYV-Tb-CbQ"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NtB-VK-mQs">
                                 <rect key="frame" x="16" y="154" width="343" height="190"/>
@@ -203,6 +206,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QSK-CC-IBk"/>
                     </view>
+                    <connections>
+                        <segue destination="z9d-Qt-9CE" kind="show" identifier="skillVCSegue" id="Dvj-iL-Fat"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OGX-ZT-xUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="uEH-sY-Kgj" userLabel="Exit" sceneMemberID="exit"/>
@@ -230,7 +236,7 @@
                                         <rect key="frame" x="112.5" y="46" width="150" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="GVc-Kl-Ifc"/>
-                                            <constraint firstAttribute="width" constant="150" id="HGQ-55-88l"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="HGQ-55-88l"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
